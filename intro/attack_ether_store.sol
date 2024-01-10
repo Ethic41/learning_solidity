@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3
 pragma solidity ^0.8.0;
 
-import "vuln_ether_store.sol";
+import "./vuln_ether_store.sol";
 
 
 contract Attack {
