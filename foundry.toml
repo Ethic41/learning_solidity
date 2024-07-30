@@ -2,5 +2,9 @@
 src = "src"
 out = "artifacts"
 libs = ["lib"]
+remappings = [
+    'src/=src',
+]
+
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
