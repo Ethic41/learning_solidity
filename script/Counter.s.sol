@@ -1,12 +1,17 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
 
-import {Script, console2} from "forge-std/Script.sol";
+import {Script} from "@forge-std-1.9.1/src/Script.sol";
+import "@forge-std-1.9.1/src/console.sol";
+import {Counter} from "src/basics/FirstApp.sol";
 
-contract CounterScript is Script {
-    function setUp() public {}
+contract DeployCounter is Script {
+    function run() external {
+        uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
+        vm.startBroadcast(deployerPrivateKey);
 
-    function run() public {
-        vm.broadcast();
+        new Counter();
+
+        vm.stopBroadcast();
     }
 }
