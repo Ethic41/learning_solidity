@@ -1,4 +1,6 @@
 .vsocde
 .idea
-
+dependencies
 artifacts
+.env
+cache
