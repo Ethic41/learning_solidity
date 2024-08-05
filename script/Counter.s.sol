@@ -2,7 +2,6 @@
 pragma solidity ^0.8.13;
 
 import {Script} from "@forge-std-1.9.1/src/Script.sol";
-import "@forge-std-1.9.1/src/console.sol";
 import {Counter} from "src/basics/FirstApp.sol";
 
 contract DeployCounter is Script {
